@@ -1,4 +1,4 @@
-//go:generate protoc -I ./greeter_api --go_out=plugins=grpc:./greeter_api ./greeter_api/greeter.proto
+//go:generate protoc -I ./proto --go_out=plugins=grpc:./proto ./proto/greeter.proto
 
 package main
 
@@ -6,7 +6,7 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/linux_china/grpc-demo/greeter_api"
+	pb "github.com/linux_china/grpc-demo/proto"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
