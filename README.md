@@ -14,3 +14,7 @@ $ go run main.go
 ```
 docker build -t linuxchina/grpc-demo .
 ```
+
+# Testing
+
+Please use https://github.com/ktr0731/evans for grpc testing
