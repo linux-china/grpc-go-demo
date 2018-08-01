@@ -23,7 +23,7 @@ import (
 	"os"
 	"time"
 
-	pb "github.com/linux_china/grpc-demo/proto"
+	pb "github.com/linux_china/grpc-go-demo/proto"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )
