@@ -12,7 +12,7 @@ $ go run main.go
 
 # Docker build
 ```
-docker build -t linuxchina/grpc-demo .
+docker build -t linuxchina/grpc-go-demo .
 ```
 
 # Testing
