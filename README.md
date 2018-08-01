@@ -10,3 +10,7 @@ $ cd greeter_server
 $ go run main.go
 ```
 
+# Docker build
+```
+docker build -t linuxchina/grpc-demo .
+```
