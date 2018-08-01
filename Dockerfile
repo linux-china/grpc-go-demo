@@ -1,7 +1,7 @@
 # Start by building the application.
 FROM golang:1.10.3 as build
 
-ENV GIT_TERMINAL_PROMPT=1
+RUN git clone https://github.com/linux-china/grpc-go-demo.git /go/src/github.com/linux_china/grpc-go-demo
 WORKDIR /go/src/app
 COPY . .
 
