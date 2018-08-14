@@ -14,7 +14,7 @@ func main() {
 	}
 	defer conn.Close()
 	client := healthpb.NewHealthClient(conn)
-	resp, _ := client.Check(context.Background(), &healthpb.HealthCheckRequest{Service: ""}, grpc.FailFast(false))
+	resp, _ := client.Check(context.Background(), &healthpb.HealthCheckRequest{}, grpc.FailFast(false))
 	if resp.Status != healthpb.HealthCheckResponse_SERVING {
 		print("Failed to check health!")
 	} else {
